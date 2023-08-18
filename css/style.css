@@ -1,18 +1,27 @@
 :root {
     --primary-grey: #ececec;
     --secundary-grey: #c5c5c5;
+    --dark-main:  #1a1a1a;
+    --dark-sec: #363636;
+    --azul-plin: #255f85b6;
+    --azul-plin-2: #0e81e6;
 }
 
 * {
     margin: 0;
 }
+.dark {
+    transition: .3s;
+}
+
+
 
 .back {
-    background-color: #b4b4b4;
+    background-color: #ffffff;
 }
 
 .back.dark {
-    background-color: #000000;
+    background-color:  var(--dark-main);
 }
 
 
@@ -25,9 +34,7 @@
 }
 
 .header-container.dark {
-    padding: 0;
-    background-color: #000000;
-    height: 100%;
+    background-color:var(--dark-main);
 }
 
 .sub-container {
@@ -57,6 +64,11 @@
     color: #000000;
 }
 
+.navigation, .dark a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .div.flex-center {
     display: flex;
     align-items: center;
@@ -74,6 +86,10 @@
     background-color: var(--secundary-grey);
 }
 
+.dark .menu_X:hover {
+    background-color: var(--azul-plin);
+}
+
 .menu_X img {
     padding: 5px;
 }
@@ -89,26 +105,21 @@
 }
 
 .menu_svg:hover {
-    background-color: var(--secundary-grey);
+    background-color: #202020;
+    transition: .3s;
+}
+
+
+
+.menu_svg.dark:hover {
+    background-color: var(--azul-plin);
+    transition: .3s;
 }
 
 .menu_svg img{
     width: 1em;
     height: 1.1em;
     margin: 0px 10px 0px 10px;
-}
-
-.micro_back {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--primary-grey);
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.micro_back:hover {
-    background-color: var(--secundary-grey);
 }
 
 .flags {
@@ -163,6 +174,10 @@
     left: 0;
 }
 
+.open.dark {
+    background-color: var(--dark-main);
+}
+
 .lateral {
     height: 100%;
     margin: 0;
@@ -176,9 +191,14 @@
     padding: 10px 0px 10px 30px;
 }
 
+
 .item-menu:hover {
     border-radius: 16px;
     background-color: #c5c5c5;
+}
+
+.dark .item-menu:hover {
+    background-color: var(--azul-plin);
 }
 
 .item-menu a {
@@ -187,6 +207,11 @@
     align-items: center;
     text-decoration: none;
 }
+
+.item-menu, .dark span {
+    color: #fff;
+}
+
 
 .txt_link {
     margin-left: 10px;
@@ -199,9 +224,10 @@
     position: absolute;
     left: -260px;
     top: -180px;
-    padding: 4px;
+    padding: 1px;
     opacity: 0%;
     transition: .3s;
+
 }
 
 .theme-open.act {
@@ -210,8 +236,12 @@
     left: 260px;
     top: 180px;
     background-color: #fff;
-    padding: 4px;
-    border-radius: 4px;
+    padding: 1px;
+    border-radius: 16px;
+}
+
+.dark .theme-open.act {
+    background-color: var(--dark-main);
 }
 
 .themes {
@@ -221,13 +251,20 @@
     background-color: #c9c9c9;
     cursor: pointer;
 }
-.themes:hover {
-   background-color: #9e9e9e;
+
+.dark .themes {
+    background-color: var(--dark-sec);
 }
+.dark .themes:hover {
+    background-color: var(--azul-plin);
+}
+
 
 .themes a{
     padding: 0px 15px 0px 15px;
  }
+
+
 
 
 .section-container {
@@ -237,20 +274,6 @@
     height: 100%;
 }
 
-.videos {
-    display: flex;
-    color: #fff;
-    height: 100px;
-}
-
-#imageForm {
-    display: flex;
-}
-
-#gallery img{
-    width: 200px;
-    height: 100%;
-}
 
 
 #btnTop {
@@ -321,7 +344,8 @@ img {
     bottom: -1px;
     width: 100%;
     height: 2px;
-    background: #686868; 
+    background: #0e81e6;
+    background: linear-gradient(180deg, rgba(14,129,230,1) 18%, rgba(26,153,232,1) 35%, rgba(26,123,236,1) 49%, rgba(24,0,255,1) 100%);
     border-radius: 6px;
     transform-origin: right;
     transform: scaleX(0);
@@ -347,7 +371,8 @@ img {
     bottom: -4px;
     width: 100%;
     height: 2px;
-    background: #6f00ff; 
+    background: rgb(14,129,230);
+    background: linear-gradient(180deg, rgba(14,129,230,1) 18%, rgba(26,153,232,1) 35%, rgba(26,123,236,1) 49%, rgba(24,0,255,1) 100%);
     border-radius: 6px;
     transform-origin: right;
     transform: scaleX(0);
@@ -360,19 +385,20 @@ img {
 }
 
 .h1-curso h1 {
-    color: #202020;
+    color: var(--dark-main);
 }
 
 .h1-curso,.dark h1 {
-    color: #fff; /* Texto branco para a classe p.dark */
+    color: var(--azul-plin-2);
 }
+
 
 .p-curso h3{
     color: #202020;
 }
 
 .p-curso,.dark h3 {
-    color: #ff0000;
+    color: #584a81;
 }
 
 .p-curso h5{
@@ -383,7 +409,7 @@ img {
     color: #eee9e9;
 }
 .p-curso p{
-    color: #202020;
+    color: #2e2e2e;
 }
 
 .p-curso,.dark p{
