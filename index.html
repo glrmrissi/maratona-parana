@@ -14,12 +14,18 @@
                 <div class="row">
                     <div class="col flex-center" >
                         <div class="menu_svg" id="open" onclick="show()">
-                            <img src="img/icons8-menu-50.png" width="20" alt="">
+                            <!-- <img src="img/icons8-menu-50.png" width="20" alt=""> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-list" viewBox="0 0 16 16" id="iconList">
+                                <path d="M2 4a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4zm0 5a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-2z"/>
+                            </svg>
                         </div>
                     </div>
                     <div class="col utilizador_icon  div flex-center">
                         <div class="col flags">
-                            <img src="img/flag.svg" alt="" width="19" onclick= "flagShow()">
+                            <!-- <img src="img/flag.svg" alt="" width="19" onclick= "flagShow()"> -->
+                            <div id="flagContainer" onclick="flagShow()">
+                                <svg height="26" width="26" id="flagColor" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M368,112c-11,1.4-24.9,3.5-39.7,3.5c-23.1,0-44-5.7-65.2-10.2c-21.5-4.6-43.7-9.3-67.2-9.3c-46.9,0-62.8,10.1-64.4,11.2   l-3.4,2.4v2.6v161.7V416h16V272.7c6-2.5,21.8-6.9,51.9-6.9c21.8,0,42.2,8.3,63.9,13c22,4.7,44.8,9.6,69.5,9.6   c14.7,0,27.7-2,38.7-3.3c6-0.7,11.3-1.4,16-2.2V126v-16.5C379.4,110.4,374,111.2,368,112z M368,269c-11,1.4-23.9,3.5-38.7,3.5   c-23.1,0-45-4.7-66.2-9.2c-21.5-4.6-43.6-13.3-67.1-13.3c-25.7,0-41.9,3-51.9,6V118.7c6-2.5,21.9-6.8,51.9-6.8   c21.8,0,42.2,4.3,63.9,9c22,4.7,43.8,10.6,68.5,10.6c14.7,0,28.7-2,39.7-3.3L368,269L368,269z"/></g></svg>                            
+                            </div>
                             <div class="flag_open lang">
                                 <div class="flags_countrys">
                                     <img id="ptLang" src="img/brbrazilflag_111698.svg" alt="" width="20" height="20" class="img-fluid">
@@ -81,111 +87,124 @@
         </div>
     </section>
     <section class="container-fluid section-2">
+        <div class=" align-items-center text-center">
+            <div class="wrapper">
+                <div data-translate="im" class="static-txt" >Eu sou</div>
+                    <ul class="dynamic-txts">
+                        <li><span data-translate="im_span_1">Desenvolvedor</span></li>
+                        <li><span data-translate="im_span_2">Estudante</span></li>
+                    </ul>
+                </div>
+            </div>
         <div class="text-center h1-curso">
             <span class="titulo-2">
-                <h1 class="cursos-tec " data-translate="curso">Cursos Tecnicos</h1>
+                <h1 class="cursos-tec " data-translate="curso">Cursos Técnicos</h1>
             </span>
         </div>
-        <div class="p-curso">
+        <div class="p-curso p-3 p-md-5">
             <div class="SDI">
-                <h3 data-translate="sdi">Sistemas de informação </h3>
+                <h3 data-translate="sdi" class="text-center">Sistemas de informação </h3>
                 <p data-translate="sdi_p_1"> - A faculdade de Sistemas de Informação oferece aos alunos uma educação abrangente e especializada na interseção entre a tecnologia da informação e os processos de negócios. Essa área de estudo visa preparar os estudantes para entender, projetar, desenvolver e gerenciar sistemas de informação eficazes, que desempenham um papel crucial em empresas, organizações governamentais e diversos setores da sociedade contemporânea.</p>
                 <p data-translate="sdi_p_2">- Ao longo do curso de Sistemas de Informação, os alunos são expostos a uma variedade de tópicos que abrangem tanto os aspectos técnicos quanto os aspectos de negócios da disciplina. Algumas das áreas principais que são exploradas incluem:</p>
-                <h5 data-translate="sdi_h5_1">Programação e Desenvolvimento de Software </h5>
+                <h5 data-translate="sdi_h5_1" class="text-center">Programação e Desenvolvimento de Software </h5>
                 <p  data-translate="sdi_p_3">- Os alunos aprendem várias linguagens de programação, estruturas de desenvolvimento e técnicas para criar aplicativos e sistemas de software eficientes e funcionais.</p>
-                <h5 data-translate="sdi_h5_2">Análise e Projeto de Sistemas </h5>
+                <h5 data-translate="sdi_h5_2" class="text-center">Análise e Projeto de Sistemas </h5>
                 <p data-translate="sdi_p_4">- Os estudantes são ensinados a identificar necessidades de sistemas de informação, modelar processos de negócios, projetar soluções tecnológicas e garantir que as aplicações atendam aos requisitos dos usuários.</p>
-                <h5 data-translate="sdi_h5_3">Segurança da Informação </h5>
+                <h5 data-translate="sdi_h5_3" class="text-center">Segurança da Informação </h5>
                 <p data-translate="sdi_p_5">- Com a crescente ameaça de ciberataques, os alunos aprendem sobre práticas e técnicas de segurança para proteger sistemas, redes e dados contra ameaças digitais.</p>
-                <h5 data-translate="sdi_h5_4">Aspectos de Negócios </h5>
+                <h5 data-translate="sdi_h5_4" class="text-center">Aspectos de Negócios </h5>
                 <p data-translate="sdi_p_6">- Além das habilidades técnicas, os alunos também exploram conceitos de gestão, economia, marketing e estratégia para entender como a tecnologia da informação pode impulsionar os objetivos de negócios de uma organização.</p>
             </div>
         </div>
-        <div class="p-curso">
+        <div class="p-curso p-3 p-md-5">
             <div class="ADS">
-                <h3>Análise e Desenvolvimento de Sistemas </h3>
-                <p>- A faculdade de Análise e Desenvolvimento de Sistemas oferece aos alunos uma educação focada e prática em todas as etapas do ciclo de vida dos sistemas de software. Essa área de estudo visa preparar os estudantes para entender as necessidades dos usuários, projetar soluções eficazes, desenvolver aplicativos e garantir que esses sistemas atendam aos requisitos de qualidade e funcionalidade.</p>
-                <p>- Ao longo do curso de Análise e Desenvolvimento de Sistemas, os alunos são expostos a uma variedade de tópicos que abrangem tanto os aspectos técnicos quanto os aspectos práticos da disciplina. Algumas das áreas principais que são exploradas incluem:</p>
-                <h5>Programação e Desenvolvimento de Software</h5>
-                <p>Os alunos aprendem várias linguagens de programação, técnicas de codificação, estruturas de desenvolvimento e princípios de design para criar aplicativos e sistemas de software de alta qualidade.</p>
-                <h5>Análise de Requisitos </h5>
-                <p>- Os estudantes são treinados para coletar, documentar e compreender as necessidades dos usuários e transformá-las em requisitos claros e precisos para o desenvolvimento de sistemas.</p>
-                <h5>Banco de Dados </h5>
-                <p>- Os alunos aprendem a projetar e gerenciar bancos de dados, permitindo a manipulação eficiente e a recuperação de informações relevantes.</p>
-                <h5>Gestão de Projetos de Desenvolvimento</h5>
-                <p>A faculdade frequentemente inclui princípios de gestão de projetos, ajudando os alunos a entender como planejar, executar e monitorar projetos de desenvolvimento de software com eficiência.</p>
+                <h3 data-translate="ads" class="text-center">Análise e Desenvolvimento de Sistemas </h3>
+                <p data-translate="ads_p_1">- A faculdade de Análise e Desenvolvimento de Sistemas oferece aos alunos uma educação focada e prática em todas as etapas do ciclo de vida dos sistemas de software. Essa área de estudo visa preparar os estudantes para entender as necessidades dos usuários, projetar soluções eficazes, desenvolver aplicativos e garantir que esses sistemas atendam aos requisitos de qualidade e funcionalidade.</p>
+                <p data-translate="ads_p_2">- Ao longo do curso de Análise e Desenvolvimento de Sistemas, os alunos são expostos a uma variedade de tópicos que abrangem tanto os aspectos técnicos quanto os aspectos práticos da disciplina. Algumas das áreas principais que são exploradas incluem:</p>
+                <h5 data-translate="ads_h5_1" class="text-center">Programação e Desenvolvimento de Software</h5>
+                <p data-translate="ads_p_3">Os alunos aprendem várias linguagens de programação, técnicas de codificação, estruturas de desenvolvimento e princípios de design para criar aplicativos e sistemas de software de alta qualidade.</p>
+                <h5 data-translate="ads_h5_2" class="text-center">Análise de Requisitos </h5>
+                <p data-translate="ads_p_4">- Os estudantes são treinados para coletar, documentar e compreender as necessidades dos usuários e transformá-las em requisitos claros e precisos para o desenvolvimento de sistemas.</p>
+                <h5 data-translate="ads_h5_3" class="text-center">Banco de Dados </h5>
+                <p data-translate="ads_p_5">- Os alunos aprendem a projetar e gerenciar bancos de dados, permitindo a manipulação eficiente e a recuperação de informações relevantes.</p>
+                <h5 data-translate="ads_h5_4" class="text-center">Gestão de Projetos de Desenvolvimento</h5>
+                <p data-translate="ads_p_6">A faculdade frequentemente inclui princípios de gestão de projetos, ajudando os alunos a entender como planejar, executar e monitorar projetos de desenvolvimento de software com eficiência.</p>
             </div>
         </div>
-        <div class="p-curso">
+        <div class="p-curso p-3 p-md-5">
             <div class="CCP">
-                <h3>Ciência da Computação </h3>
-                <p>- A faculdade de Ciência da Computação oferece aos alunos uma educação abrangente e aprofundada no vasto campo da computação. Essa área de estudo visa proporcionar aos estudantes uma compreensão sólida dos princípios teóricos e práticos que sustentam a tecnologia da informação, bem como capacitá-los a resolver problemas complexos por meio de abordagens algorítmicas e criativas.</p>
-                <p>- Ao longo do curso de Ciência da Computação, os alunos são expostos a uma ampla gama de tópicos que abrangem desde a teoria fundamental até as aplicações mais avançadas da disciplina. Algumas das áreas principais que são exploradas incluem:</p>
-                <h5>Algoritmos e Estruturas de Dados </h5>
-                <p>- Os alunos aprendem a projetar algoritmos eficientes e estruturas de dados para resolver problemas de forma otimizada, seja em aplicativos, sistemas ou plataformas.</p>
-                <h5>Programação</h5>
-                <p>-  A faculdade oferece um conhecimento profundo de várias linguagens de programação, bem como técnicas de codificação e desenvolvimento de software de alta qualidade.</p>
-                <h5>Teoria da Computação</h5>
-                <p>- Os estudantes exploram os fundamentos teóricos da computação, incluindo autômatos, linguagens formais, complexidade computacional e lógica</p>
-                <h5>Inteligência Artificial e Aprendizado de Máquina </h5>
-                <p>- Com o crescimento da IA, os alunos são apresentados aos conceitos de criação de sistemas que podem simular processos de inteligência humana e aprender a partir de dados.</p>
-                <h5>Desenvolvimento de Software</h5>
-                <p>- Além de programação, os estudantes exploram métodos de desenvolvimento de software, práticas ágeis e colaboração em equipes de desenvolvimento.</p>
+                <h3 data-translate="ccp" class="text-center">Ciência da Computação </h3>
+                <p data-translate="ccp_p_1">- A faculdade de Ciência da Computação oferece aos alunos uma educação abrangente e aprofundada no vasto campo da computação. Essa área de estudo visa proporcionar aos estudantes uma compreensão sólida dos princípios teóricos e práticos que sustentam a tecnologia da informação, bem como capacitá-los a resolver problemas complexos por meio de abordagens algorítmicas e criativas.</p>
+                <p data-translate="ccp_p_2">- Ao longo do curso de Ciência da Computação, os alunos são expostos a uma ampla gama de tópicos que abrangem desde a teoria fundamental até as aplicações mais avançadas da disciplina. Algumas das áreas principais que são exploradas incluem:</p>
+                <h5 data-translate="ccp_h5_1" class="text-center">Algoritmos e Estruturas de Dados </h5>
+                <p data-translate="ccp_p_3">- Os alunos aprendem a projetar algoritmos eficientes e estruturas de dados para resolver problemas de forma otimizada, seja em aplicativos, sistemas ou plataformas.</p>
+                <h5 data-translate="ccp_h5_2" class="text-center">Programação</h5>
+                <p data-translate="ccp_p_4">-  A faculdade oferece um conhecimento profundo de várias linguagens de programação, bem como técnicas de codificação e desenvolvimento de software de alta qualidade.</p>
+                <h5 data-translate="ccp_h5_3" class="text-center">Teoria da Computação</h5>
+                <p data-translate="ccp_p_5">- Os estudantes exploram os fundamentos teóricos da computação, incluindo autômatos, linguagens formais, complexidade computacional e lógica</p>
+                <h5 data-translate="ccp_h5_4" class="text-center">Inteligência Artificial e Aprendizado de Máquina </h5>
+                <p data-translate="ccp_p_6">- Com o crescimento da IA, os alunos são apresentados aos conceitos de criação de sistemas que podem simular processos de inteligência humana e aprender a partir de dados.</p>
+                <h5 data-translate="ccp_h5_5" class="text-center">Desenvolvimento de Software</h5>
+                <p data-translate="ccp_p_7">- Além de programação, os estudantes exploram métodos de desenvolvimento de software, práticas ágeis e colaboração em equipes de desenvolvimento.</p>
             </div>
         </div>
-        <div class="p-curso">
+        <div class="p-curso p-3 p-md-5">
             <div class="faculs">
-                <h3>Faculdades em Londrina </h3>
-                <p>Em Londrina, Brasil, diversas instituições de ensino oferecem cursos relacionados à área de Tecnologia da Informação, como Ciência da Computação, Análise e Desenvolvimento de Sistemas e Sistemas de Informação. Algumas das faculdades que podem oferecer esses cursos incluem:</p>
-                <h5>Universidade Estadual de Londrina (UEL)</h5>
-                <p>- A UEL é uma das principais instituições de ensino da região e oferece cursos de Ciência da Computação e Sistemas de Informação.</p>
-                <h5>Pontifícia Universidade Católica do Paraná (PUCPR) - Campus Londrina</h5>
-                <p>- A PUCPR também tem um campus em Londrina e oferece cursos na área de tecnologia, como Ciência da Computação e Engenharia de Software.</p>
-                <h5>Centro Universitário Filadélfia (UNIFIL)</h5>
-                <p>- A UNIFIL oferece cursos como Análise e Desenvolvimento de Sistemas e Sistemas de Informação.</p>
-                <h5>Faculdade Pitágoras</h5>
-                <p>- A Faculdade Pitágoras tem uma unidade em Londrina e oferece cursos como Análise e Desenvolvimento de Sistemas.</p>
-                <h5>Instituto Federal do Paraná (IFPR) - Campus Londrina</h5>
-                <p>- O IFPR oferece cursos técnicos e de nível superior na área de Tecnologia da Informação.</p>
-                <p>É importante ressaltar que a disponibilidade dos cursos pode variar de acordo com os semestres e a oferta acadêmica de cada instituição. Recomendo que você entre em contato diretamente com essas faculdades para obter informações atualizadas sobre os cursos que elas oferecem em Londrina. Além disso, você pode verificar os sites das instituições, participar de feiras de educação ou buscar informações junto a conselhos de estudantes locais para obter informações mais detalhadas sobre as opções disponíveis.</p>
+                <h3 data-translate="faculs" class="text-center">Faculdades em Londrina </h3>
+                <p data-translate="faculs_p_1">Em Londrina, Brasil, diversas instituições de ensino oferecem cursos relacionados à área de Tecnologia da Informação, como Ciência da Computação, Análise e Desenvolvimento de Sistemas e Sistemas de Informação. Algumas das faculdades que podem oferecer esses cursos incluem:</p>
+                <h5 data-translate="faculs_h5_1" class="text-center">Universidade Estadual de Londrina (UEL)</h5>
+                <p data-translate="faculs_p_2">- A UEL é uma das principais instituições de ensino da região e oferece cursos de Ciência da Computação e Sistemas de Informação.</p>
+                <h5 data-translate="faculs_h5_2" class="text-center">Pontifícia Universidade Católica do Paraná (PUCPR) - Campus Londrina</h5>
+                <p data-translate="faculs_p_3">- A PUCPR também tem um campus em Londrina e oferece cursos na área de tecnologia, como Ciência da Computação e Engenharia de Software.</p>
+                <h5 data-translate="faculs_h5_3" class="text-center">Centro Universitário Filadélfia (UNIFIL)</h5>
+                <p data-translate="faculs_p_4">- A UNIFIL oferece cursos como Análise e Desenvolvimento de Sistemas e Sistemas de Informação.</p>
+                <h5 data-translate="faculs_h5_4" class="text-center">Faculdade Pitágoras</h5>
+                <p data-translate="faculs_p_5">- A Faculdade Pitágoras tem uma unidade em Londrina e oferece cursos como Análise e Desenvolvimento de Sistemas.</p>
+                <h5 data-translate="faculs_h5_5" class="text-center">Instituto Federal do Paraná (IFPR) - Campus Londrina</h5>
+                <p data-translate="faculs_p_6">- O IFPR oferece cursos técnicos e de nível superior na área de Tecnologia da Informação.</p>
+                <p data-translate="faculs_p_7">É importante ressaltar que a disponibilidade dos cursos pode variar de acordo com os semestres e a oferta acadêmica de cada instituição. Recomendo que você entre em contato diretamente com essas faculdades para obter informações atualizadas sobre os cursos que elas oferecem em Londrina. Além disso, você pode verificar os sites das instituições, participar de feiras de educação ou buscar informações junto a conselhos de estudantes locais para obter informações mais detalhadas sobre as opções disponíveis.</p>
             </div>
         </div>
         <div class="text-center h1-curso">
-            <span class="h1-esti">
-                <h1 class="titulo">Por que escolhi Sistemas de informação?</h1>
+            <span class="h3-esti">
+                <h3 data-translate="gui" class="titulo">Por que escolhi Sistemas de informação?</h3>
             </span>
         </div>
-        <div class="p-curso">
+        <div class="p-curso p-3 p-md-5">
             <div class="pq-escoli">
-                <p>-  Eu, Guilherme Rissi, escolhi sistemas de informação, para fazer um bacharelado para trabalhar fora, já que empresas de fora aceitam mais bacharelados.</p>
-                <p>- Além de eu gostar bastante de tráfego de redes e amar programação, estou a espera de terminar a escola para fazer um estágio e uma faculdade, sob oque eu mais gosto de estudar e fazer.</p>
+                <p data-translate="gui_p_1">-  Eu, Guilherme Rissi, escolhi sistemas de informação, para fazer um bacharelado para trabalhar fora, já que empresas de fora aceitam mais bacharelados.</p>
+                <p data-translate="gui_p_2">- Além de eu gostar bastante de tráfego de redes e amar programação, estou a espera de terminar a escola para fazer um estágio e uma faculdade, sob oque eu mais gosto de estudar e fazer.</p>
             </div>
         </div>
     </section>
     <div class="open">
         <div class="lateral">
             <div class="menu_X" id="open" onclick="show()">
-                <img src="img/x-lg.svg" width="30" alt="">
+                <!-- <img src="img/x-lg.svg" width="30" alt=""> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-x-lg" viewBox="0 0 16 16" id="close">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                  </svg>
             </div>
             <nav class="navigation_open">
                 <ul>
                     <li class="item-menu" id="item-menu"><a href="#">
-                        <img id= "house" src="img/house.svg" width="24" srcset="">
-                        <span data-translate="home" class="txt_link active-lang" >Home</span>
+                        <!-- <img id= "house" src="img/house.svg" width="24" srcset=""> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" class="bi bi-house" viewBox="0 0 16 16" id="house">
+                            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                          </svg>
+                        <span data-translate="home" class="txt_link active-lang" >Ínicio</span>
                     </a></li>
                     <li class="item-menu" id="item-menu" onclick= "showTheme()" ><a href="#">
-                        <img id="moon" src="img/moon.svg" width="24" srcset="">
-                        <span data-translate="theme"   class="txt_link">Theme</span>
+                        <!-- <img id="moon" src="img/moon.svg" width="24" srcset=""> -->
+                        <img class="sunAndMoon" src="img/SunAndMoon.svg" width="40">
+                        <span data-translate="theme"   class="txt_link">Tema</span>
                     </a></li>
                     <div class="theme-open">
                         <div class="themes ">
-                            <a id="dark"><img src="img/moon.svg" alt="" width="20"></a>
+                            <!-- <a id="dark"><img src="img/moon.svg" alt="" width="20"></a> -->
+                            <a id="dark"><img src="img/SunAndMoon.svg" alt="" width="26"></a>
                         </div>
                     </div>
-                    <li class="item-menu" id="item-menu"><a href="#">
-                        <img id="three-dots" src="img/three-dots.svg" width="24" srcset="">
-                        <span data-translate="more"  class="txt_link">More</span>
-                    </a></li>
                 </ul>
             </nav>
         </div>
