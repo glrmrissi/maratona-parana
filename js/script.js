@@ -74,6 +74,8 @@ function ocultar() {
   }
 }
 
+window.addEventListener("scroll", ocultar)
+
 const translate = {
   pt: {
     home: "Início", 
