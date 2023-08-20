@@ -21,22 +21,28 @@ dark.addEventListener('click', () => {
   item_menu.classList.toggle('dark')
 })
 
-const darkButton = document.getElementById('dark');
-const iconList = document.getElementById('iconList');
-const close = document.getElementById('close');
+const darkButton = document.getElementById('dark')
+const iconList = document.getElementById('iconList')
+const close = document.getElementById('close')
+const sun = document.querySelector("#sun")
+const sun2 = document.querySelector("#sun-2")
 
 darkButton.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme');
     if (document.body.classList.contains('dark-theme')) {
-        iconList.style.fill = 'white';
-        flagColor.style.fill='white';
-        house.style.fill='white';
-        close.style.fill='white';
+        iconList.style.fill = 'white'
+        flagColor.style.fill='white'
+        house.style.fill='white'
+        close.style.fill='white'
+        sun.style.fill='white'
+        sun2.style.fill='white'
     } else {
-        iconList.style.fill = 'black';
-        flagColor.style.fill='black';
-        house.style.fill='black';
-        close.style.fill='black';
+        iconList.style.fill = 'black'
+        flagColor.style.fill='black'
+        house.style.fill='black'
+        close.style.fill='black'
+        sun.style.fill='black'
+        sun2.style.fill='black'
     }
 });
 
@@ -70,10 +76,8 @@ function ocultar() {
 
 const translate = {
   pt: {
-    home: "Inicio", 
-    learn: "Lendo",
+    home: "Início", 
     theme: "Tema",
-    more: "Mais",
     im: "Eu sou",
     im_span_1: "Desenvolvedor",
     im_span_2: "Estudante",
@@ -98,7 +102,7 @@ const translate = {
     ads_p_4: "- Os estudantes são treinados para coletar, documentar e compreender as necessidades dos usuários e transformá-las em requisitos claros e precisos para o desenvolvimento de sistemas.",
     ads_h5_3: "Banco de Dados",
     ads_p_5: "- Os alunos aprendem a projetar e gerenciar bancos de dados, permitindo a manipulação eficiente e a recuperação de informações relevantes.",
-    ads_h5_4: "Gestão de Projetos de Desenvolvimento",
+    saiba: "Saiba mais",
     ccp: "Ciência da Computação",
     ccp_p_1: "- A faculdade de Ciência da Computação oferece aos alunos uma educação abrangente e aprofundada no vasto campo da computação. Essa área de estudo visa proporcionar aos estudantes uma compreensão sólida dos princípios teóricos e práticos que sustentam a tecnologia da informação, bem como capacitá-los a resolver problemas complexos por meio de abordagens algorítmicas e criativas.",
     ccp_p_2: "- Ao longo do curso de Ciência da Computação, os alunos são expostos a uma ampla gama de tópicos que abrangem desde a teoria fundamental até as aplicações mais avançadas da disciplina. Algumas das áreas principais que são exploradas incluem:",
@@ -132,9 +136,7 @@ const translate = {
   }, 
   ja: {
     home: "ホーム", 
-    learn: "ラーニング",
     theme: "テーマ",
-    more: "モア",
     im: "私は",
     im_span_1: "かいはつしゃ",
     im_span_2: "がくせい",
@@ -159,7 +161,7 @@ const translate = {
     ads_p_4: "- 学生はユーザーのニーズを収集し、文書化し、理解し、それらをシステムの開発のための明確かつ正確な要件に変換する訓練を受けます。",
     ads_h5_3: "データベース",
     ads_p_5: "- 学生はデータベースを設計し、管理する方法を学び、関連する情報の効率的な操作と取得を可能にします。",
-    ads_h5_4: "開発プロジェクトの管理",
+    saiba: "もっと詳しく知る :",
     ccp: "こんぴゅーたさいえんす",
     ccp_p_1: "- コンピュータサイエンス学部は学生にコンピューティングの広大な分野で包括的かつ深い教育を提供します。この学問分野は、学生に情報技術を支える理論的な原則と実践的な原則の堅固な理解を提供することを目指し、アルゴリズムと創造的なアプローチを通じて複雑な問題を解決できるようにすることを目的としています。",
     ccp_p_2: "- コンピュータサイエンスのコース全体を通じて、学生は学問の基本理論から最も高度な応用までを含む幅広いトピックに触れます。探求される主要な分野には以下が含まれます：",
@@ -193,9 +195,7 @@ const translate = {
   },
   en: {
     home: "Home", 
-    learn: "Learning",
     theme: "Theme",
-    more: "More",
     im: "I'm",
     im_span_1: "Developer",
     im_span_2: "Student",
@@ -220,7 +220,7 @@ const translate = {
     ads_p_4: "- Students are trained to gather, document, and understand user needs and transform them into clear and precise requirements for system development.",
     ads_h5_3: "Database",
     ads_p_5: "- Students learn to design and manage databases, enabling efficient manipulation and retrieval of relevant information.",
-    ads_h5_4: "Development Project Management",
+    saiba: "Learn more: ",
     ccp: "Computer Science",
     ccp_p_1: "- The Computer Science college provides students with a comprehensive and in-depth education in the vast field of computing. This field of study aims to give students a solid understanding of the theoretical and practical principles underpinning information technology, as well as to empower them to solve complex problems through algorithmic and creative approaches.",
     ccp_p_2: "Throughout the Computer Science course, students are exposed to a wide range of topics that encompass everything from fundamental theory to the most advanced applications of the discipline. Some of the main areas that are explored include:",
