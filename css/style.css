@@ -152,7 +152,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .wrapper .dynamic-txts {
-    margin-left: -15px;
+    margin-left: -20px;
     line-height: 60px;
     height: 60px;
     overflow: hidden;
