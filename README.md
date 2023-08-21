@@ -2,7 +2,7 @@
 
 ## Tecnologias usadas: 
 
-glrmrissi.github.io/maratona-parana/
+[glrmrissi.github.io/maratona-parana/](https://glrmrissi.github.io/maratona-parana/)
 
 <div style="display: inline_block;"><br/>
   <img align="center" alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
