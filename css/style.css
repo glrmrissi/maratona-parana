@@ -32,8 +32,6 @@ body::-webkit-scrollbar-thumb {
     transition: .3s;
 }
 
-
-
 .back {
     background-color: #ffffff;
 }
@@ -41,7 +39,6 @@ body::-webkit-scrollbar-thumb {
 .back.dark {
     background-color:  var(--dark-main);
 }
-
 
 
 .header-container {
@@ -205,6 +202,16 @@ body::-webkit-scrollbar-thumb {
         left: 100%;
         margin: 0 -15px 0 15px;
     }
+}
+
+
+.init-hidden {
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+.init-hidden-off {
+    opacity: 1;
 }
 
 .flags {

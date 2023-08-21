@@ -76,6 +76,18 @@ function ocultar() {
 
 window.addEventListener("scroll", ocultar)
 
+const observer = new IntersectionObserver(entries => {
+    entries[0].target.classList.add('init-hidden-off')
+}, {
+  threshold: [0, .5, 1]
+})
+
+Array.from(document.querySelectorAll('.init-hidden')).forEach(elementos => {
+  observer.observe(elementos)
+})
+
+
+
 const translate = {
   pt: {
     home: "Início", 
@@ -273,7 +285,7 @@ document.getElementById('usaLang').addEventListener('click', () => changeLanguag
 
 
 function showTheme () {
-  openTheme.classList.add('act')
+  openTheme.classList.toggle('act')
   setTimeout( function () {
     openTheme.classList.remove('act')
 }, 5000)
